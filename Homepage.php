@@ -12,6 +12,7 @@
             
     </div> 
     <?php
+    #testing
         $file=fopen("MarqueeContent.html","r+");
         $cont=fread($file,filesize("MarqueeContent.html"));
         echo "
