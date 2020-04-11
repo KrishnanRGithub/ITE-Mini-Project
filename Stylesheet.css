@@ -1,0 +1,310 @@
+*{
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+body{
+    overflow-x: hidden;
+    margin: 20px;
+    height: 90vh;
+}
+div#Navbar>a>img{
+    height:50px;
+    float:right;
+}
+div#Navbar>a.Link{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 800;
+    background-color: black;
+    font-size: 30px;
+    padding:0px 30px 10px; 
+    vertical-align: auto;
+    text-align: center;
+    color:white;
+    
+}
+div#Navbar>a.Link:hover{
+    color:black;
+    background-color: transparent;
+    transition: 0.2s ease-in-out;
+    
+}
+#Marquee{
+    height:6vh;
+    width:110%;
+    margin-left:-20px;
+    margin-top: 20px; 
+    background-color:rgba(0, 0, 0);
+    box-shadow: rgb(223, 7, 7) 0px 7px 15px;
+
+}
+#Marquee marquee{
+    color: white;
+    padding-top:8px;
+    font-size: 130%;
+}
+div.container{
+    margin-top:3vh;
+    margin-left: 2vw;
+    width:90vw;
+    height:40vh;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+}
+div.container div.containerUpperRow,
+div.container div.containerLowerRow{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+div.container div.containerUpperRow img,
+div.container div.containerLowerRow img{
+    display:grid;
+    height:200px;
+    margin:25px; 
+    justify-self: center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    margin-bottom: 35px;
+}
+div.container div.containerUpperRow img:hover{
+    height:225px;
+    margin-bottom: 5px;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+div.container div.containerLowerRow img:hover{
+    height:225px;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+body.SignBg{
+    
+    background-image: url("BackgroundBlurred.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+a#foot{
+    position:absolute;
+    bottom: 5px;
+    font-weight: 900;
+    color:black;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+}
+a#foot:hover{
+    color:rgb(206, 8, 8);
+    
+}
+#blurscreen{
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width:100%;
+    height: 100%;
+    
+}
+marquee a{
+    color:rgb(211, 84, 84);
+}
+#popup{
+    background-color: white;
+    position:relative;
+    top:55%;
+    left:50%;
+    display:grid;
+    grid-template-columns: 3fr 5fr;
+    transform: translate(-50%,-50%);
+    width:70vw;
+    height:60vh;
+    border-radius: 20px;
+    padding:30px;
+}
+#blurscreen>#popup>img{
+    margin:10%;
+    height: 80%;
+    justify-self: center;
+}
+.Login{
+    position: relative;
+    top:50%;
+    left:50%;
+    width: 22vw;
+    border-radius: 30px;
+    height:50vh;
+    padding:40px;
+    outline: none;
+    display: block;
+    box-shadow: 10px 10px 25px 2px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.7);
+    visibility:visible;
+}
+.SignUp{
+    position: relative;
+    width: 22vw;
+    border-radius: 30px;
+    height:70vh;
+    padding:40px;
+    top:50%;
+    left:50%;
+    outline: none;
+    box-shadow: 10px 10px 25px 2px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    margin-top:40px;
+}
+.SignBg .Login input{
+    
+    border:none;
+    width:75%;
+    background: transparent;
+    height:20%;
+    outline:none;
+    color:white;
+    margin-bottom:35px;
+    font-size: larger;
+}
+.SignBg .SignUp input{
+    border:none;
+    width:75%;
+    background: transparent;
+    height:20%;
+    outline:none;
+    color:white;
+    margin-bottom:28px;
+    font-size: larger;
+}
+.SignBg input[type="submit"]{
+    
+    width:50%;
+    height:50px;
+    background-color:rgba(0,0,0,0.6);
+    border-radius: 30px;
+    box-shadow: 3px 3px 4px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.SignBg input[type="submit"]:hover{
+    
+    transition: ease-in 0.1s;
+    box-shadow: 3px 3px 8px;
+    color:#ff0013;
+}
+.genText{
+    font-size: 50px;
+    color:whitesmoke;
+    margin-bottom:20px;
+    font-weight: 600;
+    
+}
+#Feedback{
+    background: rgba(0, 0, 0, 0.568);
+    width: 842px; 
+    border-radius: 70px;
+    margin-top:50px;
+}
+#feedbackBox,textarea{
+    width: 672px; 
+    height: 340px; 
+    resize:none;
+    outline:none;
+    border-radius: 30px;
+    padding:30px;
+    font-size: larger;
+    margin:50px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 10px;
+    border: black 3px solid;
+     
+    
+}
+#feedbackBox:focus{
+    box-shadow: red 5px 5px 20px;
+    transition: ease 0.2s;
+   
+}
+
+#feedSubmit{
+
+    font-size: 30px;
+    outline:none;
+    margin-bottom:30px ;
+    background-color: black;
+    margin-left:50px;
+    color:white;
+    border-radius: 20px;
+    width:732px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border:none;
+    box-shadow: rgb(77, 76, 76) 10px 10px 10px;
+
+}
+.Desc{
+    font-size:130%;
+    padding:70px;
+    padding-bottom:30px;
+}
+.RegButton{
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+    outline:none;
+    background-color: rgba(0,0,0, 0.4);
+    border:none;
+    font-size:150%;
+    width:150px;
+    height:50px;
+    border-radius:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+div.ClubJoined{
+    margin-top:1vh;
+    width:25vw;
+    height:20vh;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+}
+.ClubJoined>div.containerUpperRow,
+.ClubJoined>div.containerLowerRow{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.ClubJoined>div.containerUpperRow>img,
+.ClubJoined>div.containerLowerRow>img{
+    display:grid;
+    height:10vh;
+    margin:10px; 
+    justify-self: center;
+    margin-bottom: 10px;
+}
+
+
+
+select,#Email,.profileDisplay{
+    width:20vw;
+    height:5vh;
+    text-align: center;
+    font-size: larger;
+    margin-left: 40vw;
+    font-weight: 800;
+    border:none;
+    box-shadow: grey 5px  5px 10px;
+
+}
